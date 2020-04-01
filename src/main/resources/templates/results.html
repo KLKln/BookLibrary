@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Library</title>
+</head>
+<body>
+<form>
+<table>
+<tr th:each="currentBook: ${contacts}">
+	<td th:text="$currentBook.title}" />
+	<td th:text="${currentBook.author}" />
+	<td th:text="${currentBook.isbn}" />
+	<td th:text="${currentBook.bookInfo.length}" />
+	<td th:text="${currentBook.bookInfo.genre}" />
+	<td th:text="${currentBook.bookInfo.publisher}" />
+	<td><a th:href="@{/edit/{id}(id=${currentBook.id})}">Edit</a></td>
+	<td><a th:href="@{/delete/{id}(id=${currentBook.id})}">Delete</a></td>
+	</tr>
+</table>
+</form>
+<a href="../addNewBook">Add a new book to your library</a>
+</body>
+</html>
