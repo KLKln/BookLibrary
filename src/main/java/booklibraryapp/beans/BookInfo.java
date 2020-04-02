@@ -1,4 +1,4 @@
-package beans;
+package booklibraryapp.beans;
 
 import javax.persistence.Embeddable;
 

@@ -1,4 +1,4 @@
-package controller;
+package booklibraryapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import repository.BookRepository;
-import beans.Book;
+import booklibraryapp.repository.BookRepository;
+import booklibraryapp.beans.Book;
 
 @Controller
 public class WebController {

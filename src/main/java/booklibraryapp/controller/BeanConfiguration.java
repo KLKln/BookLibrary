@@ -1,10 +1,10 @@
-package controller;
+package booklibraryapp.controller;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import beans.Book;
-import beans.BookInfo;
+import booklibraryapp.beans.Book;
+import booklibraryapp.beans.BookInfo;
 
 @Configuration
 public class BeanConfiguration {
@@ -20,7 +20,7 @@ public class BeanConfiguration {
 	
 	@Bean
 	public BookInfo bookInfo() {
-		BookInfo bean = new BookInfo();
+		BookInfo bean = new booklibraryapp.beans.BookInfo();
 		return bean;
 	}
 

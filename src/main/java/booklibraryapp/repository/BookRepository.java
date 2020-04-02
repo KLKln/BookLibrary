@@ -1,7 +1,7 @@
-package repository;
+package booklibraryapp.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import beans.Book;
+import booklibraryapp.beans.Book;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long>{
