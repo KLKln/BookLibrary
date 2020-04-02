@@ -7,14 +7,14 @@
 <body>
 <form th:object="${newBook}" th:action="@{/update/{id}(id=${newBook.id})}" method=POST>
 Title: <input name="title" size="20" th:field="*{title}"><br />
-Author: <input name="Author" size="20" th:field="*{author}"><br />
-ISBN: <input name="isbn" size="20" th:field="*{isbn}"><br />
+Author: <input name="author" size="20" th:field="*{author}"><br />
+ISBN: <input name="isbn" size="20" th:field="*{isbn}"><br /> 
 Book Length: <input name="bookInfo.length" size="20" th:field="*{bookInfo.length}"><br />
 Genre: <input name="bookInfo.genre" size="20" th:field="*{bookInfo.genre}"><br />
-Publisher: <input name="bookInfo.Publisher" size="20" th:field="*{bookInfo.publisher}"><br />
+Publisher: <input name="bookInfo.publisher" size="20" th:field="*{bookInfo.publisher}"><br />
 
-<input name="Submit" type="submit" value="submit" />
+<input name="submit" type="submit" value="submit" />
 </form>
-<a href="../viewAllBooks">View your library</a>
+<a href="../viewAll">View your library</a>
 </body>
 </html>

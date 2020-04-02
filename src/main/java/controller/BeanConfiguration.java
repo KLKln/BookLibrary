@@ -1,10 +1,12 @@
 package controller;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import beans.Book;
 import beans.BookInfo;
 
+@Configuration
 public class BeanConfiguration {
 	
 	@Bean

@@ -7,7 +7,7 @@
 <body>
 <form>
 <table>
-<tr th:each="currentBook: ${contacts}">
+<tr th:each="currentBook: ${books}">
 	<td th:text="$currentBook.title}" />
 	<td th:text="${currentBook.author}" />
 	<td th:text="${currentBook.isbn}" />

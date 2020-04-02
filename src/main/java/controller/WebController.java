@@ -49,7 +49,7 @@ public class WebController {
 	@GetMapping("/remove/{id}")
 	public String removeBook(@PathVariable("id") long id, Model model) {
 		Book b = repo.findById(id).orElse(null);
-	    repo.remove(b);
+	    repo.delete(b);
 	    return viewAllBooks(model);
 	}
 
