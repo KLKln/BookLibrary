@@ -8,12 +8,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import booklibraryapp.repository.BookRepository;
+import booklibraryapp.repository.InfoRepository;
 import booklibraryapp.beans.Book;
 
 @Controller
 public class WebController {
-	@Autowired
+	
+	//@Autowired
 	BookRepository repo;
+	//InfoRepository repo1;
 	
 	@GetMapping({ "/", "viewAll"})
 	public String viewAllBooks(Model model) {
