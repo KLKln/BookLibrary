@@ -22,7 +22,7 @@ public class WebController {
 		}
 		
 		model.addAttribute("books", repo.findAll());
-		return "library";
+		return "results";
 	}
 	
 	@GetMapping("/addNewBook")
